@@ -7,7 +7,7 @@ RUN apk add --no-cache \
     rsync \
     bash
 
-RUN curl https://install.joshcarp.com/gohugoio/hugo@v0.76.5!
+RUN curl https://install.joshcarp.com/gohugoio/hugo@v0.76.5! | bash
 
 WORKDIR /src
 
