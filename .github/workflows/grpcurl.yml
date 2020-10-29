@@ -1,4 +1,4 @@
-name: Release
+name: deploy grpcurl
 
 on:
   push:
@@ -17,6 +17,6 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
           repository: docker.io/joshcarp/hugo
           tag_with_ref: true
-          dockerfile: ./hugo.Dockerfile
+          dockerfile: ./grpcurl.Dockerfile
           tags: latest
           add_git_labels: true
