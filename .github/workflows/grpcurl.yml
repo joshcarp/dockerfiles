@@ -15,7 +15,7 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          repository: docker.io/joshcarp/hugo
+          repository: docker.io/joshcarp/grpcurl
           tag_with_ref: true
           dockerfile: ./grpcurl.Dockerfile
           tags: latest
